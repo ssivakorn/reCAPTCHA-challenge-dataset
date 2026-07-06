@@ -1,0 +1,75 @@
+# reCAPTCHA Challenge Dataset
+
+Labeled dataset of Google reCAPTCHA visual challenges collected from real-world websites. Each challenge includes the instruction text, extracted keyword, individual tile images, and ground-truth tile labels annotated by a human annotator.
+
+
+- URL: https://www.kaggle.com/datasets/ssivakorn/recaptcha-challenge
+- Last Update: 2026-06-14
+
+## Challenge Types
+
+### Type A — Independent Image Tiles
+The user receives a 3×3 grid of nine independent tiles and must select
+all tiles containing the target keyword. Type A has two sub-variants:
+- **Static:** All matches must be identified in a single pass
+- **Dynamic:** Correctly clicked tiles refresh with new images; the
+  challenge loops until no matches remain
+
+### Type B — Single Image Grid
+The user receives a single photograph split into a 4×4 grid of 16 tiles
+and must select all tiles containing the target keyword. All matches must
+be identified in a single pass with no tile refresh.
+
+
+## Annotation
+
+Each challenge was manually labeled by a human annotator using a custom
+web interface. The annotator recorded which tiles constitute correct
+answers based on the challenge instruction. Labels reflect strict
+exact-match criteria consistent with reCAPTCHA's own acceptance standard.
+
+
+## File Formats
+
+### `info.json`
+Each challenge folder contains an `info.json` file with the following fields:
+
+```json
+{
+  "instruction": "Select all squares with\ntraffic lights\nIf there are none, click skip",
+  "keyword": "traffic lights",
+  "correct_answers": [1, 3, 5, 7]
+}
+```
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `instruction` | string | Full instruction text shown to the user |
+| `keyword` | string | Extracted target object keyword |
+| `correct_answers` | list[int] | Zero-indexed tile indices that are correct answers |
+
+### Tile Images
+- **Type A:** 9 tiles (`tile_0.png` to `tile_8.png`), each an independent image
+- **Type B:** 16 tiles (`tile_0.png` to `tile_15.png`), each a crop of `full_images.png`
+- Tile indices follow left-to-right, top-to-bottom order
+
+**Type A (3×3):**
+
+```
+| 0 | 1 | 2 |
+
+| 3 | 4 | 5 |
+
+| 6 | 7 | 8 |
+```
+**Type B (4×4):**
+
+```
+|  0 |  1 |  2 |  3 |
+
+|  4 |  5 |  6 |  7 |
+
+|  8 |  9 | 10 | 11 |
+
+| 12 | 13 | 14 | 15 |
+```
