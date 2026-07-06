@@ -2,8 +2,6 @@
 
 Labeled dataset of Google reCAPTCHA visual challenges collected from real-world websites. Each challenge includes the instruction text, extracted keyword, individual tile images, and ground-truth tile labels annotated by a human annotator.
 
-
-- URL: https://www.kaggle.com/datasets/ssivakorn/recaptcha-challenge
 - Last Update: 2026-06-14
 
 ## Challenge Types
