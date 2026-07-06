@@ -1,0 +1,9 @@
+{
+  "instruction": "Select all images with\nbridges",
+  "keyword": "bridges",
+  "correct_answers": [
+    1,
+    4,
+    6
+  ]
+}

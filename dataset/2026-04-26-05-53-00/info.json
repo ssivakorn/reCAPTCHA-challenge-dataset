@@ -1,0 +1,12 @@
+{
+  "instruction": "Select all squares with\nfire hydrants\nIf there are none, click skip",
+  "keyword": "fire hydrants",
+  "correct_answers": [
+    2,
+    6,
+    7,
+    10,
+    11,
+    14
+  ]
+}

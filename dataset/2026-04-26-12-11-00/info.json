@@ -1,0 +1,13 @@
+{
+  "instruction": "Select all squares with\ncrosswalks\nIf there are none, click skip",
+  "keyword": "crosswalks",
+  "correct_answers": [
+    3,
+    5,
+    8,
+    9,
+    13,
+    14,
+    15
+  ]
+}

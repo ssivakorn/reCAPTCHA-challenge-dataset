@@ -1,0 +1,9 @@
+{
+  "instruction": "Select all images with\na fire hydrant\nClick verify once there are none left.",
+  "keyword": "a fire hydrant",
+  "correct_answers": [
+    1,
+    2,
+    5
+  ]
+}

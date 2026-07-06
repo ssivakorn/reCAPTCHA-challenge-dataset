@@ -1,0 +1,10 @@
+{
+  "instruction": "Select all images with\ncars",
+  "keyword": "cars",
+  "correct_answers": [
+    0,
+    3,
+    6,
+    8
+  ]
+}

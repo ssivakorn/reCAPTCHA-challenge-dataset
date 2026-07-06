@@ -1,0 +1,12 @@
+{
+  "instruction": "Select all squares with\ntraffic lights",
+  "keyword": "traffic lights",
+  "correct_answers": [
+    0,
+    1,
+    4,
+    5,
+    8,
+    9
+  ]
+}

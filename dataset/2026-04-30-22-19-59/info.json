@@ -1,0 +1,13 @@
+{
+  "instruction": "Select all squares with\nbicycles",
+  "keyword": "bicycles",
+  "correct_answers": [
+    4,
+    5,
+    8,
+    9,
+    10,
+    12,
+    13
+  ]
+}

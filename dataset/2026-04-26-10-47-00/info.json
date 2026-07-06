@@ -1,0 +1,11 @@
+{
+  "instruction": "Select all squares with\ntraffic lights\nIf there are none, click skip",
+  "keyword": "traffic lights",
+  "correct_answers": [
+    4,
+    5,
+    8,
+    9,
+    13
+  ]
+}

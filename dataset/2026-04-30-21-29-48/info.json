@@ -1,0 +1,10 @@
+{
+  "instruction": "Select all images with a\nbus",
+  "keyword": "bus",
+  "correct_answers": [
+    2,
+    5,
+    7,
+    8
+  ]
+}

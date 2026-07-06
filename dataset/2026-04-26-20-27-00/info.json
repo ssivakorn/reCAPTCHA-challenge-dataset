@@ -1,0 +1,11 @@
+{
+  "instruction": "Select all squares with\nmotorcycles\nIf there are none, click skip",
+  "keyword": "motorcycles",
+  "correct_answers": [
+    5,
+    9,
+    10,
+    13,
+    14
+  ]
+}

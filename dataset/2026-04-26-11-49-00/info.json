@@ -1,0 +1,14 @@
+{
+  "instruction": "Select all squares with\nstairs\nIf there are none, click skip",
+  "keyword": "stairs",
+  "correct_answers": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14
+  ]
+}

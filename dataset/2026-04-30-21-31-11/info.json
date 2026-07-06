@@ -1,0 +1,9 @@
+{
+  "instruction": "Select all images with a\nbus\nClick verify once there are none left.",
+  "keyword": "bus",
+  "correct_answers": [
+    5,
+    7,
+    8
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "instruction": "Select all images with\ncrosswalks\nClick verify once there are none left.",
+  "keyword": "crosswalks",
+  "correct_answers": [
+    2,
+    4,
+    6
+  ]
+}
