@@ -4,6 +4,17 @@ Labeled dataset of Google reCAPTCHA visual challenges collected from real-world 
 
 - Last Update: 2026-06-14
 
+## Intended Use
+
+This dataset is published for research purposes — including CAPTCHA
+robustness/security research, accessibility research, and academic study
+of visual challenge design. It is not intended for use in building or
+operating automated systems that solve reCAPTCHA challenges to defeat
+bot-detection in production (e.g. account creation abuse, scraping,
+spam). Such use is likely to violate Google's reCAPTCHA and general
+Terms of Service regardless of this dataset's license, and is outside
+the intended use of this release.
+
 ## Challenge Types
 
 ### Type A — Independent Image Tiles
@@ -71,3 +82,7 @@ Each challenge folder contains an `info.json` file with the following fields:
 
 | 12 | 13 | 14 | 15 |
 ```
+
+## License
+
+This dataset is released under [CC BY-NC 4.0](LICENSE) (Attribution-NonCommercial). You may share and adapt it with attribution, for non-commercial purposes only.
