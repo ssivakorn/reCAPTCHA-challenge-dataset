@@ -106,4 +106,4 @@ python3 scripts/validate.py
 
 ## License
 
-This dataset is released under [CC BY-NC 4.0](LICENSE) (Attribution-NonCommercial). You may share and adapt it with attribution, for non-commercial purposes only.
+Copyright (c) 2026. This dataset is released under [CC BY-NC 4.0](LICENSE) (Attribution-NonCommercial). You may share and adapt it with attribution, for non-commercial purposes only.
