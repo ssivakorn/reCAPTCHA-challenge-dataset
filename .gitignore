@@ -1,2 +1,15 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local agent context
 CLAUDE.local.md
 AGENTS.local.md
