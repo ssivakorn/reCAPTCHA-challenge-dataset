@@ -1,6 +1,6 @@
 # reCAPTCHA Challenge Dataset
 
-[![License: CC BY-NC 4.0](https://img.shields.io/github/license/ssivakorn/reCAPTCHA-challenge-dataset)](LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](LICENSE)
 [![Validate Dataset](https://github.com/ssivakorn/reCAPTCHA-challenge-dataset/actions/workflows/validate.yml/badge.svg)](https://github.com/ssivakorn/reCAPTCHA-challenge-dataset/actions/workflows/validate.yml)
 ![Challenges](https://img.shields.io/badge/challenges-1000-blue)
 ![Last Update](https://img.shields.io/badge/last%20update-2026--06--14-blue)
