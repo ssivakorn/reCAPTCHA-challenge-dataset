@@ -1,5 +1,10 @@
 # reCAPTCHA Challenge Dataset
 
+[![License: CC BY-NC 4.0](https://img.shields.io/github/license/ssivakorn/reCAPTCHA-challenge-dataset)](LICENSE)
+[![Validate Dataset](https://github.com/ssivakorn/reCAPTCHA-challenge-dataset/actions/workflows/validate.yml/badge.svg)](https://github.com/ssivakorn/reCAPTCHA-challenge-dataset/actions/workflows/validate.yml)
+![Challenges](https://img.shields.io/badge/challenges-1000-blue)
+![Last Update](https://img.shields.io/badge/last%20update-2026--06--14-blue)
+
 Labeled dataset of Google reCAPTCHA visual challenges collected from real-world websites. Each challenge includes the instruction text, extracted keyword, individual tile images, and ground-truth tile labels annotated by a human annotator.
 
 - Last Update: 2026-06-14
@@ -81,6 +86,22 @@ Each challenge folder contains an `info.json` file with the following fields:
 |  8 |  9 | 10 | 11 |
 
 | 12 | 13 | 14 | 15 |
+```
+
+## Validation
+
+`scripts/validate.py` checks every folder in `dataset/` against the schema documented above and runs automatically on every push via [GitHub Actions](.github/workflows/validate.yml). For each challenge it verifies:
+
+- `info.json` is present and parses as valid JSON
+- `instruction` and `keyword` are strings, and `correct_answers` is a list
+- the tile file count is either 9 (Type A) or 16 (Type B)
+- the tile files present exactly match `tile_0.png` ... `tile_N.png` for that count — no gaps, no extras
+- every index in `correct_answers` is an integer within range for the folder's tile count
+
+It does not validate image content (e.g. that a tile actually matches its label) — only structural/schema correctness.
+
+```
+python3 scripts/validate.py
 ```
 
 ## License
