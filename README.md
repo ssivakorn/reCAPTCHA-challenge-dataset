@@ -1,9 +1,9 @@
 # reCAPTCHA Challenge Dataset
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?logo=creativecommons&logoColor=white)](LICENSE)
 [![Validate Dataset](https://github.com/ssivakorn/reCAPTCHA-challenge-dataset/actions/workflows/validate.yml/badge.svg)](https://github.com/ssivakorn/reCAPTCHA-challenge-dataset/actions/workflows/validate.yml)
-![Challenges](https://img.shields.io/badge/challenges-1000-blue)
-![Last Update](https://img.shields.io/badge/last%20update-2026--06--14-blue)
+![Challenges](https://img.shields.io/badge/reCAPTCHA-1000%20challenges-green?logo=google&logoColor=white)
+![Last Update](https://img.shields.io/badge/Last%20Update-2026--06--14-blue)
 
 Labeled dataset of Google reCAPTCHA visual challenges collected from real-world websites. Each challenge includes the instruction text, extracted keyword, individual tile images, and ground-truth tile labels annotated by a human annotator.
 
@@ -29,11 +29,27 @@ all tiles containing the target keyword. Type A has two sub-variants:
 - **Dynamic:** Correctly clicked tiles refresh with new images; the
   challenge loops until no matches remain
 
+<p align="center">
+  <img src="images/type_a_challenge.png" alt="Type A challenge example" width="400"><br>
+  <em>Example Type A challenge: "Select all images with a fire hydrant" — nine independent tiles, three containing hydrants.</em>
+</p>
+
 ### Type B — Single Image Grid
 The user receives a single photograph split into a 4×4 grid of 16 tiles
 and must select all tiles containing the target keyword. All matches must
 be identified in a single pass with no tile refresh.
 
+<p align="center">
+  <img src="images/type_b_challenge.png" alt="Type B challenge example" width="400"><br>
+  <em>Example Type B challenge: "Select all squares with traffic lights" — a single photo split into a 4×4 grid.</em>
+</p>
+
+
+## Data Collection
+
+Challenges were collected by visiting real-world websites with Google
+reCAPTCHA deployed, each time using a fresh browser session with no
+prior browsing history or cookies. Collection took place in mid-2026.
 
 ## Annotation
 
